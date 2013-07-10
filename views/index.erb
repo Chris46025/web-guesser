@@ -11,7 +11,7 @@
   <head></head>
   <body>
     <p>
-      The secret number is between the age ofbirth and the age of death of the average somker. Take a guess
+      <%= question %>(Remember all answers are ONE word)
     </p>
 
     <p>
@@ -19,17 +19,13 @@
         <input type='text' name='guess' />
         <input type='submit' value='Guess!' />
       </form>
-      <% if message=="Too high babydoll" %>
-      <img src="http://cdn.pbh2.com/wordpress/wp-content/uploads/2013/02/sports-fails-gifs-bike-ramp.gif">
-      Too High!!!!
-      <% elsif message=="Too low babydoll" %>
-      <img src="http://www.fertilitypickle.com/wp-content/uploads/2013/04/20130401dikembemutombo.gif">
-      NO NO NO Too low
-      <% elsif message=="Right on the money baby" %>
-      <img src="http://media.tumblr.com/tumblr_mcaqlluY6X1qzr8l8.gif">
-      <% else %>
-      <% end %>
-        
+      <% if message.downcase== answer %>
+       <img src="http://media.tumblr.com/tumblr_mcaqlluY6X1qzr8l8.gif">
+       <% elsif message.downcase=="" %>
+       <% else %>
+       <img src="http://singleblink.files.wordpress.com/2013/03/wrong.gif?w=500&h=264">
+       <% end %>
+       Press guess to advance
     <p> 
   </body>
 </html>
