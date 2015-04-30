@@ -41,6 +41,8 @@ q19="What is in seasons, seconds, centuries and minutes but not in decades, year
 a19="n"
 q20= "What phone belongs to the first person?"
 a20="iphone"
+q21= "Who gives you everything you want but also gives you nothing at all?"
+a21="you"
 
 score=0
 game_counter=0
@@ -48,7 +50,7 @@ game_counter=0
 pages = { :page1 => [q1, a1], :page2 => [q2, a2], :page3 => [q3, a3], :page4 => [q4, a4], :page5 => [q5, a5], :page6 => [q6, a6],
  :page7 => [q7, a7], :page8 => [q8, a8], :page9 => [q9, a9], :page10 => [q10, a10], :page11 => [q11, a11], :page12 => [q12, a12],
   :page13 => [q13, a13], :page14 => [q14, a14], :page15 => [q15, a15], :page16 => [q16, a16], :page17 => [q17, a17], :page18 => [q18, a18],
-   :page19 => [q19, a19], :page20 => [q20, a20]}
+   :page19 => [q19, a19], :page20 => [q20, a20], :page16 => [q21, a21]}
 
 answer = ""
 
